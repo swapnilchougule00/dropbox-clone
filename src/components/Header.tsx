@@ -18,7 +18,7 @@ function Header() {
                 </div>
                 <h1 className='font-bold text-xl'>Dropbox</h1>
             </Link>
-            <div className='px-5 space-x-2 items-center'>
+            <div className='px-5 space-x-2 flex items-center'>
             <ThemeToggler/> 
                 <UserButton afterSignOutUrl='/'/>
                 <SignedOut>
