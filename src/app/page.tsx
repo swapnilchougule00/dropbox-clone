@@ -7,7 +7,7 @@ export default function Home() {
     <main className="">
       <div className=" flex-col md:flex-row flex  items-center bg-[#1E1919]  dark:bg-slate-800">
         <div className="p-10 flex flex-col bg-[#2B2929] dark:bg-slate-800 text-white spacey-5">
-          <h1 className="text-3xl text-white font-bold">Welcome to Dropbox <br /> <br /> Everything you and your business need to work efficiently, all in one place
+          <h1 className="text-4xl text-white font-bold">Welcome to Dropbox <br /> <br /> Everything you and your business need to work efficiently, all in one place
           </h1>
           <p className="pb-20 pt-2">Collaborate seamlessly and deliver work faster from anywhere with Dropbox. Securely store your content,
             edit PDFs, share videos, sign documents and track file engagement—without leaving Dropbox.</p>

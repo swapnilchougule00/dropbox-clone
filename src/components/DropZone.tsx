@@ -42,12 +42,14 @@ function DropZone() {
             size: selectedFile.size,
         })
 
-        const imageRef = ref(storage, `users/${user.id}/files/${docRef.id}`)
+        const imageref = ref(storage, `users/${user.id}/files/${docRef.id}`)
 
-        await uploadBytes(imageRef, selectedFile).then(async (snapshot) => {
-            const downloadURL = await getDownloadURL(imageRef);
-            await updateDoc(doc(db, "users", user.id, "files", docRef.id), {
-                downloadURL: downloadURL,
+        await
+         uploadBytes(imageref, selectedFile).then(async (snapshot) => {
+            const downloadURL = await getDownloadURL(imageref);
+            console.log(downloadURL)
+            await updateDoc(doc(db, 'users', user.id, 'files', docRef.id), {
+                downloadURL: downloadURL
             });
         });
         setloading(false)
