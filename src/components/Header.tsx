@@ -9,11 +9,11 @@ function Header() {
     return (
         <header className='flex items-center  justify-between'>
             <Link href='/' className='flex items-center space-x-2'>
-                <div className='bg-[#2b01fe] px-2 w-fit'>
+                <div className='bg-[#2b01fe] p-2 w-fit'>
                     <Image src='https://www.shareicon.net/data/128x128/2015/11/08/668675_box_512x512.png'
                         className='invert'
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={40}
                         alt='logo' />
                 </div>
                 <h1 className='font-bold text-xl'>Dropbox</h1>
