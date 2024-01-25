@@ -64,7 +64,7 @@ function TableWrapper({ skeletonFiles }: { skeletonFiles: FileType[] }) {
     )
 
     return (
-        <div className='flex flex-col space-y-3 pb-8'>
+        <div className='flex flex-col space-y-4 pb-8'>
             <Button variant={'outline'} className='ml-auto w-fit'
                 onClick={() => setSort(sort === 'desc' ? 'asc' : 'desc')}
             >Sort By {sort === 'desc' ? 'Newest' : 'Oldest'}</Button>
