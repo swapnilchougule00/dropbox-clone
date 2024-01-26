@@ -40,14 +40,14 @@ function TableWrapper({ skeletonFiles }: { skeletonFiles: FileType[] }) {
 
     if (docs?.docs.length === undefined) return (
         <div className='flex-flex-col w-full'>
-            <Button variant={'outline'} className='ml-auto w-36 h-10 mb-5'>
-                <Skeleton className='h-5 w-full' />
+            <Button variant={'outline'} className='ml-auto float-right w-36 h-10 mb-5'>
+                <Skeleton className='h-5 w-fll' />
             </Button>
             <div>
-                <div className='border rounded-lg'>
+                <div className=' rounded-lg'>
                     {skeletonFiles.map((file) => (
-                        <div className='flex items-center space-x-4 w-full'>
-                            <Skeleton className='h-12 w-12' />
+                        <div className='flex items-center space-y-1 space-x-4 w-full'>
+                            <Skeleton className='h-12 w-20' />
                             <Skeleton className='h-12 w-full' />
                         </div>
                     ))}
