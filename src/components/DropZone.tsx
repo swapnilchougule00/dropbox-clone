@@ -6,8 +6,10 @@ import { useState } from 'react';
 import DropzoneComponent from 'react-dropzone';
 import { db, storage } from '../../fierbase';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
+import { useToast } from './ui/use-toast';
 
 function DropZone() {
+    const {toast} = useToast()
 
     const [loading, setloading] = useState(false)
     const { isLoaded, isSignedIn, user } = useUser();
@@ -42,6 +44,7 @@ function DropZone() {
             size: selectedFile.size,
         })
 
+        toast({  description:'Uploaded Succsesfully!!!'})
         const imageref = ref(storage, `users/${user.id}/files/${docRef.id}`)
 
         await
