@@ -19,7 +19,7 @@ export default function Home() {
       </div>
 
       <p className="text-center p-3 text-[16px] fornt-bold">Our team is constantly working across different countries, time zones and offices. A lot of solutions can accommodate that now,
-        but none make it as seamless as Dropbox and Dropbox Paper.Keep everything that’s important to you and your family shareable and safe in one place. <br /><span className="font-bold text-base">Copyrights reserved @2024</span> </p>
+        but none make it as seamless as Dropbox and Dropbox Paper.Keep everything that’s important to you and your family shareable and safe in one place.  </p>
     </main>
   );
 }
